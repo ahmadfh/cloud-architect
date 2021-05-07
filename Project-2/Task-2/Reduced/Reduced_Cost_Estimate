@@ -1,0 +1,3 @@
+Reduced_Cost_Estimate
+
+I only changed the pricing model for RDS Master & Replica from OnDemand to Reserved.

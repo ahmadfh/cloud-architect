@@ -1,0 +1,24 @@
+Write a paragraph or two describing the achievable Recovery Time Objective (RTO) and Recovery Point Objective (RPO) for this Multi-AZ, multi-region database in terms of:
+
+As per AWS docs [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html], "The failover times are typically 60–120 seconds, However, large transactions or a lengthy recovery process can increase failover time. When the failover is complete, it can take additional time for the RDS console to reflect the new Availability Zone."
+
+1. Minimum RTO for a single AZ outage
+
+	I would say the minimum RTO will be 60 seconds (failover times) + 120 seconds (RDS Reflect the new AZ) = 3 minutes.
+
+2. Minimum RTO for a single region outage
+	First We nee need to promote the replica to make it a standalone database instance and then point our application to the new instance.
+	And of course we need to consider the time we receieved the email alert for example and the time it took us to contact the support team,
+	as well as how the documentation recovery steps are easy to follow.
+	 
+	RTO = Team awareness + Promote Time (which might be few minutes) + Point the application to the new instace (should also take few minutes)
+
+	I believe it might take minumum 20 minutes
+
+3. Minimum RPO for a single AZ outage
+	RPO = 3 Minutes
+
+4. Minimum RPO for a single region outage
+	Since we have a point-in-time recovery (which is a continous backup), so it always synced
+
+	So it would be the same as the RTO 20 minutes.

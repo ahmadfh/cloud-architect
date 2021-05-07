@@ -1,0 +1,4 @@
+Increased_Cost Estimate
+
+I doubled the EC2s to balance the load and give better performance.
+I added two new Amazon DocumentDB (Master & Replica) along with RDS MySQL, this will act as an authentication database, which reduce the load in the MySQL database which holds the business side of the application. 
