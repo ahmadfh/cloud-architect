@@ -1,12 +1,18 @@
 ﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
-My Estimate,US East (N. Virginia),Servers for Web &amp; Application,Amazon EC2,0,191.61,2299.32,USD,"Operating system (Linux), Quantity (8), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t2.medium)"
-My Estimate,US East (N. Virginia),Web/App  Load Balancers,Application Load Balancer,0,266.45,3197.40,USD,Number of Application Load Balancers (2)
-My Estimate,US East (N. Virginia),Database MySQL Master,Amazon RDS for MySQL,0,89.174,1070.09,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (30 GB), Quantity (1), Instance type (db.t2.medium), Deployment option (Multi-AZ), Pricing strategy (Reserved 1yr No Upfront), Additional backup storage (30 GB)"
-My Estimate,US East (N. Virginia),,S3 Standard,0,0.31,3.72,USD,S3 Standard storage (10 GB per month)
-My Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,"DT Inbound: Internet (1 TB per month), DT Outbound: Amazon CloudFront (1 TB per month)"
-My Estimate,US West (Oregon),Database MySQL Replica,Amazon RDS for MySQL,0,89.174,1070.09,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (30 GB), Quantity (1), Instance type (db.t2.medium), Deployment option (Multi-AZ), Pricing strategy (Reserved 1yr No Upfront), Additional backup storage (30 GB)"
-My Estimate,US West (Oregon),Database for Authentication Replica,Amazon DocumentDB (with MongoDB compatibility),0,60.57,726.84,USD,"( 1 instances of type db t3.medium ), Storage (30 GB), Backup storage (30 GB)"
-My Estimate,US East (N. Virginia),Database for Authentication Master,Amazon DocumentDB (with MongoDB compatibility),0,60.57,726.84,USD,"( 1 instances of type db t3.medium ), Storage (30 GB), Backup storage (30 GB)"
+My Estimate,US East (N. Virginia),,Amazon EC2,0,191.61,2299.32,USD,"Operating system (Linux), Quantity (8), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t2.medium)"
+My Estimate,US East (N. Virginia),Master DB,Amazon RDS for MySQL,0,89.174,1070.09,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (30 GB), Quantity (1), Instance type (db.t2.medium), Deployment option (Multi-AZ), Pricing strategy (Reserved 1yr No Upfront), Additional backup storage (30 GB)"
+My Estimate,US West (Oregon),DB Replica,Amazon RDS for MySQL,0,89.174,1070.09,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (30 GB), Quantity (1), Instance type (db.t2.medium), Deployment option (Multi-AZ), Pricing strategy (Reserved 1yr No Upfront), Additional backup storage (30 GB)"
+My Estimate,US East (N. Virginia),Two Load Balancers For Web/App servers,Application Load Balancer,0,266.45,3197.40,USD,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),,S3 Standard,0,0.69,8.28,USD,S3 Standard storage (30 GB per month)
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,135,1620.00,USD,Number of NAT Gateways (4)
+My Estimate,US East (N. Virginia),Authentication Database Master,Amazon DocumentDB (with MongoDB compatibility),0,60.57,726.84,USD,"( 1 instances of type db t3.medium ), Storage (30 GB), Backup storage (30 GB)"
+My Estimate,US West (Oregon),Authentication Database Replica,Amazon DocumentDB (with MongoDB compatibility),0,60.57,726.84,USD,"( 1 instances of type db t3.medium ), Storage (30 GB), Backup storage (30 GB)"
+My Estimate,US East (N. Virginia),,Amazon Route 53,0,10,120.00,USD,"Hosted Zones (4), Basic Checks Within AWS (8)"
+My Estimate,US East (N. Virginia),Backup EC2 For Testing,Amazon EC2,0,33.019999999999996,396.24,USD,"Operating system (Linux), Quantity (4), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t2.micro)"
+My Estimate,US East (N. Virginia),Caching service for higher preformance,Amazon ElastiCache,0,473.04,5676.48,USD,( 3 instances of type Memcached  Memory optimized  cache r5.large  OnDemand )
+My Estimate,US East (N. Virginia),,AWS Secrets Manager,0,12,144.00,USD,"Number of secrets (30), Average duration of each secret (30 days), Number of API calls (500 per month)"
+Global,All,Business support plan,AWS Support,0,142.13 ,1705.56,USD,"Supports 24/7 phone, chat, and email access to Cloud Support Engineers for unlimited contacts, with and a response time of less than 1 hour."
 
 
 

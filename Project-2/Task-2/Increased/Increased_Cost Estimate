@@ -1,4 +1,13 @@
 Increased_Cost Estimate
 
-I doubled the EC2s to balance the load and give better performance.
-I added two new Amazon DocumentDB (Master & Replica) along with RDS MySQL, this will act as an authentication database, which reduce the load in the MySQL database which holds the business side of the application. 
+1. I doubled the EC2s for more load balancing and give better performance (4 instances for web, 4 instances for app).
+
+2. I added two new Amazon DocumentDB (Master & Replica) along with RDS MySQL, this will act as an authentication database, which reduce the load in the MySQL database which holds the business side of the application.
+
+3. I added Secrets Manager to protect my app secrets.
+
+4. Start using ElasticCache to implement it on our system for higher performance.
+
+5. Added ready 4  t2.micro instances for staging/testing environments.
+
+6. Enabled Amazon Route 53 to support fail overs incase of disaster recovery to route the DNS in no time to backup region.

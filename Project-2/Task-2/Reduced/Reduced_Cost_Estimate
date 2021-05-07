@@ -1,3 +1,5 @@
 Reduced_Cost_Estimate
 
-I only changed the pricing model for RDS Master & Replica from OnDemand to Reserved.
+1. I only changed the pricing model for RDS Master & Replica from OnDemand to Reserved.
+2. I also reduced the number of running EC2s from 6 to 4 instances (2 for web & 2 for app)
+3. I reduced the average number of new connections per ALB from 500 to 350.
