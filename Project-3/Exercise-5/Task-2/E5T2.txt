@@ -34,5 +34,3 @@
 		1. An IAM role assigned a policy that allows admin access.
 		2. Disk storage has been provisioned without volume encryption enabled.
 		3. A server instance has been created and configured to allow RDP connections from the public internet.
-
-
