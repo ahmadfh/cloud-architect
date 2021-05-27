@@ -1,0 +1,5 @@
+1. Ensure the default security group of every VPC restricts all traffic.
+2. Move the Web Application instance to a private subnet.
+3. Only allow port 5000 for the Web Application to be accessed, which the load balancer will forward the request to it. And remove/limit other rules, specially "all traffic" & 'ssh' rules.
+3. Enable encryption on secret recipes S3 Bucket
+4. Ensure MFA is enabled for the "root" account

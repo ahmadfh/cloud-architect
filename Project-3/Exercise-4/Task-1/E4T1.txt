@@ -1,0 +1,9 @@
+1. It's a best practice to configure security groups to allow SSH access only from specific sources that you own, such as from bastion hosts.
+2. We use AWS Session Manager instead of doing an SSH to access our instances.
+3. Only open needed port in the security group, i.e.: Web application should only allow port 5000 to be accessed from the public where the application load balancer resides, and if we can make our instances in the private subnets and only use load balancers to access them internally would be better.
+4. enable S3 server-side encryption for the secret recipes bucket.
+5. prevent using access key when dealing with AWS Service, always try to use Instance Profile Role instead, and if we had to use Access Key we should alway limit the access to what AWS services should this access key has, and even the service itself we should limit the access to the resources inside it. For example if we want to access the secret recipes bucket, we need to only allow this key to access only this bucket by using ARN.
+6. And always check the ingress access in the security groups and only allow the needed type/port/sources.
+
+
+And we always need to enable monitoring/logging services such as GuardDuty/Inspector/SecurityHub/CloudTrail to detect such attacks whenever they happen.

@@ -1,0 +1,38 @@
+1. Identify tools that will allow you to do the following: 
+	a. Scan infrastructure as code templates.
+		* Cfripper
+		* cfn-lint
+		* If we are using Terraform as IaC language, then we can use the following tools:
+			* Chef inspec
+			* Open policy agent / Regula
+			* Terrascan
+
+	b. Scan AMI’s or containers for OS vulnerabilities.
+		* For container open source tools include:
+			* Clair
+			* Anchore
+			* Trivy
+
+		* For AWS instancse:
+			* AWS Inspector
+
+	c. Scan an AWS environment for cloud configuration vulnerabilities.
+		* AWS Config
+		* AWS SecuirtyHub
+
+2. For each tool - identify an example compliance violation or vulnerability which it might expose.
+
+	a. Scan infrastructure as code templates:
+		These tools can help us find misconfiguration or vulnerability such as defining an IAM Policy that is allowing full access to all services or some of them.
+
+	b. Scan AMI’s or containers for OS vulnerabilities:
+		These tools can detect:
+			1. Allowing SSH password login
+			2. Vulnerabilities to Django libraries
+
+	c. Scan an AWS environment for cloud configuration vulnerabilities:
+		1. An IAM role assigned a policy that allows admin access.
+		2. Disk storage has been provisioned without volume encryption enabled.
+		3. A server instance has been created and configured to allow RDP connections from the public internet.
+
+

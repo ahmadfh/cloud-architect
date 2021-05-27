@@ -1,0 +1,12 @@
+1. Web service instance
+	*This instance is located in the public subnet, and since we have a load balancer that has access to this instance, so it's better to move the Web Service instance to a private subnets.
+
+2. S3
+	*The Web service instance can access the S3 without having to go throught the internet gateway, we can use the private vpc network to access the S3, which also eliminate the cost for accessing the S3 when using the private network.
+
+3. WebAppSG Security Group
+	* There is SSH access from anywhere on port 22, this should be removed. Later we can only allow ssh access whenever needed for a specific ip address
+	* Remove All traffic rule as well, as we only need http on port 80
+
+4. Instance IAM Role
+	This role gives a full access to the S3 service, instead we need to limit this role to only read access to the public recipes bucket.

@@ -1,0 +1,1 @@
+This finding is generated only through monitoring traffic on port 22, the data source for GuardDuty is: VPC flow logs
